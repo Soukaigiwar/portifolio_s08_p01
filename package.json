@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "./start.sh",
+    "start": "node ./src/server.js",
     "dev": "nodemon ./src/server.js",
     "dm": "knex migrate:latest && nodemon ./src/server.js",
     "dms": "knex migrate:latest && knex seed:run && nodemon ./src/server.js"
